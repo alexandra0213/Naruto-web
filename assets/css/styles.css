@@ -104,3 +104,9 @@ img {
   text-align: center;
   font-weight: 300;
 }
+.personaje-clan {
+  background-color: #ec8531;
+  border-radius: 30px;
+  width: 70px;
+  margin: 0 auto;
+}

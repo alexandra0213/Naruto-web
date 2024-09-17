@@ -30,7 +30,7 @@ function renderPersonajes(data) {
 }
 
 async function fetchPersonajes() {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 30; i++) {
         await getPersonajes();
         await new Promise(resolve => setTimeout(resolve, 1000));
     }

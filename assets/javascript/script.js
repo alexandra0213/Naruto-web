@@ -5,6 +5,7 @@ $(document).ready(async function() {
     async function fetchClans() {
         try {
             const response = await $.getJSON(apiUrl);
+            console.log("Clanes obtenidos:", response.clans); 
             return response.clans.filter(clan => clansToShow.includes(clan.name.toLowerCase())) || [];
         } catch (error) {
             console.log("Error al obtener los clanes:", error);
@@ -15,6 +16,7 @@ $(document).ready(async function() {
     async function fetchClanCharacters(clanId) {
         try {
             const response = await $.getJSON(`${apiUrl}/${clanId}`);
+            console.log(`Personajes del clan ${clanId}:`, response.characters); 
             return response.characters || [];
         } catch (error) {
             console.log("Error al obtener los personajes del clan:", error);
@@ -28,8 +30,10 @@ $(document).ready(async function() {
         let name = $("<h2></h2>").text(character.name).addClass("personaje-nombre");
         let clan = $("<p></p>").text(character.personal ? character.personal.sex : 'Desconocido').addClass("personaje-clan");
         let debut = $("<p></p>").text(`Debut: ${character.debut ? character.debut.anime : 'Desconocido'}`).addClass("personaje-datos");
-        let jutsu = $("<p></p>").text(`Jutsu: ${character.jutsu ? character.jutsu.join(', ') : 'Desconocido'}`).addClass("personaje-datos");
-
+    
+        let jutsus = character.jutsu ? character.jutsu.slice(0, 3).join(', ') : 'Desconocido';
+        let jutsu = $("<p></p>").text(`Jutsu: ${jutsus}`).addClass("personaje-datos");
+    
         div.append(
             $("<div></div>").addClass("personaje-imagen").append(img),
             $("<div></div>").addClass("personaje-info").append(
@@ -38,9 +42,10 @@ $(document).ready(async function() {
                 $("<div></div>").addClass("personaje-datos").append(debut, jutsu)
             )
         );
-
+    
         $("#listaClanes").append(div);
     }
+    
 
     function updateCharacterList(characters, error = '') {
         const listaClanes = $('#listaClanes');
@@ -61,6 +66,7 @@ $(document).ready(async function() {
         navList.append('<li><button id="btnVerTodos">Ver todos</button></li>');
 
         clans.forEach(clan => {
+            console.log("Añadiendo botón para clan:", clan); 
             navList.append(`
                 <li class="clanes">
                     <button class="btn-clan" data-clan="${clan.id}">${clan.name}</button>
@@ -79,7 +85,7 @@ $(document).ready(async function() {
                         allCharacters = allCharacters.concat(characters);
                     }
                 } catch {
-                    // Manejo de errores, no hacemos nada adicional aquí.
+                    
                 }
                 fetchCount++;
                 if (fetchCount === clans.length) {
@@ -110,7 +116,7 @@ $(document).ready(async function() {
                     allCharacters = allCharacters.concat(characters);
                 }
             } catch {
-                // Manejo de errores, no hacemos nada adicional aquí.
+                
             }
             fetchCount++;
             if (fetchCount === clans.length) {
@@ -121,6 +127,7 @@ $(document).ready(async function() {
 
     try {
         const clans = await fetchClans();
+        console.log("Clanes obtenidos para mostrar:", clans); 
         if (clans.length > 0) {
             populateClanButtons(clans);
             await showAllCharactersOnLoad(clans);
