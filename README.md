@@ -54,6 +54,25 @@ La web está diseñada para ofrecer una experiencia interactiva al explorar los 
 4. **Paso 4:** Al seleccionar una categoría, podrás explorar cómo fueron categorizados los personajes.
 5. **Paso 5:** Ahora solo queda explorar esta breve página interactiva.
 
+
+## Problemática del Usuario
+
+### **Dificultades para Conocer Personajes**
+
+Imagina que eres un gran fan de Naruto, pero cada vez que intentas recordar o aprender más sobre los personajes, te sientes abrumado por la cantidad de información dispersa que encuentras en Internet. Desde sus historias y habilidades hasta los clanes a los que pertenecen, navegar por todo eso puede resultar agotador y confuso. Muchos fans terminan frustrados, sin saber por dónde empezar o qué detalles son realmente relevantes.
+
+## Solución Propuesta
+
+### **Una Experiencia Interactiva y Amigable**
+
+Con nuestra **Web de Naruto**, queremos eliminar esas frustraciones. Hemos diseñado una plataforma sencilla y atractiva donde puedes explorar todos los personajes de Naruto de manera clara y organizada. Al entrar, te damos la bienvenida con un recorrido visual que te invita a recordar y conocer más sobre tus personajes favoritos.
+
+Podrás filtrar a los personajes según su clan o aldea, facilitando que encuentres rápidamente la información que buscas. Ya sea que desees profundizar en la historia de los Uchiha o aprender sobre los habitantes de Konoha, nuestra web está aquí para hacer tu experiencia más divertida y accesible.
+
+Así, podrás disfrutar de la rica historia de Naruto sin la carga de la confusión, ¡todo con un solo clic!
+
+![Boceto General](https://i.gifer.com/2a1d.gif)
+
 ## Estructura de la Web
 
 | Sección         | Descripción                                              
@@ -87,6 +106,20 @@ Para proporcionar una visión más clara de la información que se presenta, aqu
 | **Kiri**       | 7                     |
 
 ![Distribución por Aldea](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSxYO2Qr0N4j4mA6Jyz2pCZmhtQDyYJkOs6g&s)
+
+### 🔨  Stack 
+
+#### ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+### Creado por:
+**@LucianaCarrasco**
+**@alexandra0213**
+**@GuadalupeCampos**
+**@Katerinrojas**
+
+
+
+
 
 
 

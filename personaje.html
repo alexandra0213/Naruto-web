@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB NARUTO</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/personajes.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script type="module" src="assets/javascript/personajes.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="nav-list">
+          <button id="ver-todos" onclick="showAllCharacters()">
+            Ver Todos
+          </button>
+          <li>
+            <button class="btn-ext">Clanes</button>
+            <ul class="clanes-menu">
+              <li><button class="clanes" id="0">Aburame</button></li>
+              <li><button class="clanes" id="1">Akimichi</button></li>
+              <li><button class="clanes" id="3">Chinoike</button></li>
+              <li><button class="clanes" id="4">Funato</button></li>
+              <li><button class="clanes" id="8">Hatake</button></li>
+              <li><button class="clanes" id="12">Hyuga</button></li>
+            </ul>
+          </li>
+          <li>
+            <button class="btn-aldeas">Aldeas</button>
+            <ul class="aldeas-menu">
+              <li><button class="aldeas" id="28">Sunagakure</button></li>
+              <li><button class="aldeas" id="11">Iwagakure</button></li>
+              <li><button class="aldeas" id="14">Kirigakure</button></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="card">
+        <!-- <div class="personaje-info">
+                <div class="datos-container">
+                    <h2 class="nombre"></h2>
+                    <p class="debut"></p>
+                    <p class="jutsu"></p>
+                </div>
+            </div> -->
+      </div>
+    </main>
+  </body>
+</html>
