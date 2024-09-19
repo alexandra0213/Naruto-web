@@ -32,11 +32,17 @@ button {
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 600;
-  width: 100px;
+  width: 200px;
+  height: 30px;
 }
 
 button:hover {
   transform: scale(1.1);
+}
+
+.emergencia {
+  width: 200px;
+  margin-left: 2px;
 }
 
 .clanes {
@@ -77,6 +83,45 @@ button:hover {
 
 .clanes-menu li button:hover {
   background-color: #ec8531;
+}
+
+.aldeas-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 200px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1;
+  padding: 10px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.aldeas-menu li {
+  margin: 0;
+}
+
+.aldeas-menu li button {
+  width: 100%;
+  background-color: #f08228;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.aldeas-menu li button:hover {
+  background-color: #ec8531;
+}
+
+.nav-list li:hover .aldeas-menu {
+  display: block;
 }
 
 /* Mostrar el menú de clanes al pasar el cursor sobre el botón "Clanes" */
@@ -164,41 +209,26 @@ img {
   font-size: 16px;
 }
 
-.aldeas-menu {
+.btn-int {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 200px;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
   z-index: 1;
+  border-radius: 10px;
   padding: 10px;
-  list-style-type: none;
-  margin: 0;
 }
 
-.aldeas-menu li {
-  margin: 0;
-}
-
-.aldeas-menu li button {
-  width: 100%;
-  background-color: #f08228;
-  border: none;
-  border-radius: 30px;
-  padding: 0.5rem;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.aldeas-menu li button:hover {
-  background-color: #ec8531;
-}
-
-.nav-list li:hover .aldeas-menu {
+.show {
   display: block;
+}
+
+a.tarjeta-link {
+  color: black;
+  text-decoration: none;
+}
+
+a.tarjeta-link:hover {
+  color: #a32121;
 }

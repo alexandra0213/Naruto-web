@@ -1,25 +1,38 @@
-body {
-  background-color: rgb(255, 194, 79);
-  height: 100vh;
+.aldeas-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 200px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1;
+  padding: 10px;
+  list-style-type: none;
   margin: 0;
 }
 
-#aldea-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.aldeas-menu li {
+  margin: 0;
 }
 
-.aldea-card {
-  background-color: beige;
-  border: 1px solid #a09c92;
-  border-radius: 10px;
-  width: 200px;
-  padding: 0px 50px 15px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+.aldeas-menu li button {
+  width: 100%;
+  background-color: #f08228;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
+
+.aldeas-menu li button:hover {
+  background-color: #ec8531;
+}
+
+.nav-list li:hover .aldeas-menu {
+  display: block;
+} 
